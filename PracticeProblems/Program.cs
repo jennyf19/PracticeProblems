@@ -7,7 +7,18 @@ namespace PracticeProblems
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter your student's score: ");
+            int y, j, k;
+            for (int i = 1; i <= 7; i++)
+            {
+                for (j = 1; j<= i; ++j)
+                    Console.Write(j);
+                for(k = 7 - i; k >=1; k--)
+                    Console.Write("");
+                Console.Write("\n");
+            }
+            Console.ReadLine();
+
+            /* Console.WriteLine("Please enter your student's score: ");
             int studentScore = int.Parse(Console.ReadLine());
 
             if (studentScore >= 90)
@@ -23,7 +34,7 @@ namespace PracticeProblems
                 Console.WriteLine("Please renter the grade.");
             }
             Console.ReadLine();
-
+            */
             /*int x, y, z;
             Console.WriteLine("Please enter three values");
             Console.WriteLine("Value for integer 1: ");
